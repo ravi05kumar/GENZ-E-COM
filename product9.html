@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripod</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content styles */
+        .content {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 100px; /* Add margin to make space for the footer */
+        }
+
+        .content h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content img {
+            max-width: 90%;
+            max-height: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .payment-options h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .payment-options .payment-button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-options .payment-button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="templates/index.html">Home</a></li>
+            <li><a href="templates/index.html#">Products</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Tripod</h1>
+        <img src="https://www.zomei.com/u_file/1811/products/01/fcc0ae96e8.jpg" alt="Product 1">
+        <p>
+            Capture stunning photos and videos with our Professional Tripod, designed for stability and precision. Featuring adjustable legs and a quick-release plate, it allows you to set up your camera or smartphone at the perfect angle with ease. The robust build and reliable locking mechanisms ensure steady support even in challenging conditions. Lightweight and compact, this tripod is ideal for both studio shoots and on-the-go photography. Elevate your creative projects with the versatile and dependable performance of our tripod.</p>
+        <div class="payment-options">
+            <h2>Choose Your Payment Option</h2>
+            <button class="payment-button" onclick="payWithCard()">Pay with Card</button>
+            <button class="payment-button" onclick="payWithPayPal()">Pay with UPI</button>
+            <button class="payment-button" onclick="payWithApplePay()">NetBanking</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Website-Chatbot Corporation. All rights reserved.</p>
+    </div>
+</body>
+</html>
